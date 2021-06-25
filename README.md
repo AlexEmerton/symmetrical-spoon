@@ -9,5 +9,5 @@ Optional: Set up virtualenv of your choice
 4. Download Chrome and matching ChromeDriver version https://chromedriver.chromium.org/downloads
 5. Put chromedriver of your choice to the /drivers directory under repo root
 6. Append drivers directory to your PATH to allow chromedriver to execute 
-7. Export the path to your chromedriver executable to CHROMEDRIVER_PATH 
+7. Export the path to your chromedriver executable to CHROMEDRIVER_PATH like `export CHROMEDRIVER_PATH=~/Downloads/symmetrical-spoon/drivers`
 8. Run `behave --tags=@login` from repository root to execute tests
