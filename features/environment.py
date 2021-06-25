@@ -7,7 +7,7 @@ from steps.utils import Utils
 
 @fixture
 def browser_chrome(context):
-    context.browser = webdriver.Chrome("drivers/chromedriver.exe")
+    context.browser = webdriver.Chrome(os.environ.get('CHROMEDRIVER_PATH'))
     context.utils = Utils()
     get_user_credentials_from_env(context)
 
